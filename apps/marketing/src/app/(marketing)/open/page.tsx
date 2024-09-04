@@ -1,7 +1,5 @@
 import { Card, CardContent } from '@documenso/ui/primitives/card';
 
-import { CallToAction } from '~/components/(marketing)/call-to-action';
-
 // export const metadata: Metadata = {
 //   title: 'Open Startup',
 // };
@@ -131,13 +129,13 @@ export default function OpenPage() {
     <div>
       <div className="mx-auto mt-6 max-w-screen-lg sm:mt-12">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-center text-3xl font-bold lg:text-5xl">
+          <h1 className="text-center text-3xl font-bold leading-10 lg:text-5xl">
             გაამარტივეთ თქვენი სამუშაო პროცესი ჩვენთან ერთად
           </h1>
 
-          <p className="text-muted-foreground mt-4 max-w-[60ch] text-center text-lg leading-normal">
-            Empower your team to close deals faster, stay productive anywhere, and customize your
-            experience. Suitable for all industries: Sales, HR, Real Estate, and more.{' '}
+          <p className="text-muted-foreground mt-6 max-w-[60ch] text-center text-lg leading-normal">
+            დაწყებული გაყიდვების კონტრაქტებიდან, ანგარიშების გახსნასა და ინვოისებამდე, არსებობს
+            უამრავი დოკუმენტი, რომელზეც ხელმოწერა და შენახვა საჭიროებს{' '}
             {/* <a
               className="font-bold"
               href="https://documenso.com/blog/pre-seed"
@@ -250,32 +248,366 @@ export default function OpenPage() {
         </div> */}
       </div>
 
-      <div className="col-span-12 mt-12 flex flex-col items-center justify-center">
-        <h2 className="text-2xl font-bold">Is there more?</h2>
+      {/* ვარიანტი 1 */}
+      {/* <div className="col-span-12 mt-16 flex flex-col items-center justify-center">
+        <h2 className="text-center text-2xl font-bold">
+          მნიშვნელობა არ აქვს სად იმყოფებით ციფრულ ტრანსფორმაციაში, <br /> Ipografi დაგეხმარებათ
+        </h2>
+        <div className="flex gap-x-7">
+          <Card spotlight className="mt-12">
+            <CardContent className="flex flex-col justify-center p-12">
+              <h2 className="text-left text-2xl font-bold">დამწყები</h2>
 
-        <p className="text-muted-foreground mt-4 max-w-[55ch] text-center text-lg leading-normal">
+              <p className="text-muted-foreground mt-4 max-w-[55ch]  leading-normal">
+                გაზარდეთ ეფექტურობა და უსაფრთხოება ქაღალდის დოკუმენტებიდან ციფრულ შეთანხმებებზე
+                გადასვლით
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card spotlight className="mt-12">
+            <CardContent className="flex flex-col justify-center p-12">
+              <h2 className="text-2xl font-bold">მზარდი</h2>
+
+              <p className="text-muted-foreground mt-4 max-w-[55ch] leading-normal">
+                გახადეთ გუნდი მეტად პროდუქტიული და გაამარტივეთ ყოველდღიური, მოსაწყენი ოპერაციები
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card spotlight className="mt-12">
+            <CardContent className="flex flex-col justify-center p-12">
+              <h2 className="text-left text-2xl font-bold">მასშტაბირებადი</h2>
+
+              <p className="text-muted-foreground mt-4 max-w-[55ch] leading-normal">
+                გაამარტივეთ და გააუმჯობესეთ თქვენი სამუშაო პროცესი ყველა განყოფილების, პროცესისა თუ
+                თანამშრომლების მძლავრი ფუნქციებით დაკავშირებით
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div> */}
+
+      {/* ვარიანტი 2 */}
+      <div className="col-span-12 mt-28 flex flex-col items-center justify-center">
+        <h2 className="text-center text-2xl font-bold">
+          ციფრული დოკუმენტები ყველა დეპარტამენტისთვის
+        </h2>
+
+        {/* <p className="text-muted-foreground mt-4 max-w-[55ch] text-center text-lg leading-normal">
           This page is evolving as we learn what makes a great signing company. We'll update it when
           we have more to share.
-        </p>
+        </p> */}
+        <div className="grid grid-cols-3 gap-x-7">
+          <Card spotlight className="mt-12">
+            <CardContent className="flex flex-col justify-center p-12">
+              <h2 className="text-left text-2xl font-bold">HR</h2>
+
+              <p className="text-muted-foreground mt-4 max-w-[55ch]  leading-normal">
+                გაზარდეთ ეფექტურობა ქაღალდიდან ციფრულ დოკუმენტებზე გადასვლით.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card spotlight className="mt-12">
+            <CardContent className="flex flex-col justify-center p-12">
+              <h2 className="text-2xl font-bold">გაყიდვები</h2>
+
+              <p className="text-muted-foreground mt-4 max-w-[55ch] leading-normal">
+                დახურეთ გარიგებები უფრო სწრაფად და ეფექტურად თქვენი ელექტრონული ხელმოწერით.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card spotlight className="mt-12">
+            <CardContent className="flex flex-col justify-center p-12">
+              <h2 className="text-2xl font-bold">შესყიდვები</h2>
+
+              <p className="text-muted-foreground mt-4 max-w-[55ch] leading-normal">
+                დაზოგეთ დრო, გააკონტროლეთ ხარჯები და შეამცირეთ რისკები მიწოდების ჯაჭვში.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card spotlight className="mt-12">
+            <CardContent className="flex flex-col justify-center p-12">
+              <h2 className="text-left text-2xl font-bold">იურიდიული</h2>
+
+              <p className="text-muted-foreground mt-4 max-w-[55ch] leading-normal">
+                შეამცირეთ რისკი და მოახდინეთ ხელშეკრულების ენის სტანდარტიზაცია.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card spotlight className="mt-12">
+            <CardContent className="flex flex-col justify-center p-12">
+              <h2 className="text-left text-2xl font-bold">IT</h2>
+
+              <p className="text-muted-foreground mt-4 max-w-[55ch] leading-normal">
+                დაზოგეთ დრო იმ პროცესების ავტომატიზირებით, რომლებიც საჭიროებენ ხელმოწერას.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card spotlight className="mt-12">
+            <CardContent className="flex flex-col justify-center p-12">
+              <h2 className="text-left text-2xl font-bold">ფინანსები</h2>
+
+              <p className="text-muted-foreground mt-4 max-w-[55ch] leading-normal">
+                დააჩქარეთ ინვოისები და მარტივად დაამენეჯმენტეთ თქვენი კრიტიკული დოკუმენტები.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
       </div>
 
-      <CallToAction className="mt-12" utmSource="open-page" />
+      {/* <CallToAction className="mt-12" utmSource="open-page" /> */}
 
-      <Card spotlight className="mt-12">
-        <CardContent className="flex flex-col items-center justify-center p-12">
-          <h2 className="text-center text-2xl font-bold">Close More Deals, Faster</h2>
 
-          <p className="text-muted-foreground mt-4 max-w-[55ch] text-center leading-normal">
-            Prepare contracts quickly, send them for signature, and track the entire process
-            digitally.
-          </p>
 
-          {/* <ul>
-            <li> Benefits:</li>
-            <li>Speed: Reduce contract preparation time.</li>
-            <li>Efficiency: Track progress without paper.</li>
-            <li>Anywhere Access: Convert, create, edit, approve, and sign documents from any device.</li>
-          </ul> */}
+
+      {/* გამოყენებები */}
+      <Card spotlight className="mt-28">
+        <CardContent className="flex flex-col items-center justify-center p-12 ">
+          <h2 className="text-center text-2xl font-bold">
+            ელექტრონული ხელმოწერები ყველა ინდუსტრიისთვის
+          </h2>
+
+          <div className="grid grid-cols-2 gap-x-10">
+            <Card spotlight className="mt-12 ">
+              <CardContent className="flex flex-col justify-center p-8">
+                <img
+                  className="mb-10 rounded rounded-bl-3xl"
+                  src="https://i.postimg.cc/VvNXTWVW/insurance.jpg"
+                  alt="insurance"
+                />
+
+                <h2 className="text-left text-2xl font-bold">სადაზღვეო</h2>
+
+                <p className="text-muted-foreground mt-4 max-w-[55ch] leading-normal">
+                  დააჩქარეთ პოლისის მიწოდებები და მოთხოვნების მოგვარება. გაუმარტივეთ საქმე
+                  დაზღვეულებსა და თანამშრომლებს.
+                </p>
+
+                {/* <ul className="mt-8">
+                  <li className="list-disc text-sm text-slate-600 "> პოლისის მყისიერი განახლება</li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    საჩივრის დაჩქარებული დამუშავება
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    დოკუმენტების უსაფრთხოდ შენახვა
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    შემცირებული საოპერაციო ხარჯები
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    Enhanced customer satisfaction
+                  </li>
+                </ul> */}
+              </CardContent>
+            </Card>
+
+            <Card spotlight className="mt-12 ">
+              <CardContent className="flex flex-col justify-center p-8">
+                <img
+                  className="mb-10 rounded rounded-bl-3xl"
+                  src="https://i.postimg.cc/T3jhVWkd/finance.jpg"
+                  alt="insurance"
+                />
+
+                <h2 className="text-left text-2xl font-bold">ფინანსები</h2>
+
+                <p className="text-muted-foreground mt-4 max-w-[55ch] leading-normal">
+                  დააჩქარეთ პოლისის მიწოდებები და მოთხოვნების მოგვარება. გაუმარტივეთ საქმე
+                  დაზღვეულებსა და თანამშრომლებს.
+                </p>
+
+                {/* <ul className="mt-8">
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    დაჩქარებული სესხის და ანგარიშის გახსნა
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    დოკუმენტების უსაფრთხოდ გაცვლა
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    დოკუმენტების უსაფრთხოდ შენახვა
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    შემცირებული საოპერაციო ხარჯები
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    შემცირებული დამუშავების დრო
+                  </li>
+                </ul> */}
+              </CardContent>
+            </Card>
+
+            <Card spotlight className="mt-12 ">
+              <CardContent className="flex flex-col justify-center p-8">
+                <img
+                  className="mb-10 rounded rounded-bl-3xl"
+                  src="https://i.postimg.cc/RZHdm9M6/government.jpg"
+                  alt="insurance"
+                />
+
+                <h2 className="text-left text-2xl font-bold">საჯარო</h2>
+
+                <p className="text-muted-foreground mt-4 max-w-[55ch] leading-normal">
+                  აამაღლეთ საჯარო სერვისების ხარისხი, მათი ხელმისავდომობის გამარტივებითა და
+                  პროცესების დაჩქარებით.
+                </p>
+
+                {/* <ul className="mt-8">
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    დაჩქარებული სესხის და ანგარიშის გახსნა
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    დოკუმენტების უსაფრთხოდ გაცვლა
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    დოკუმენტების უსაფრთხოდ შენახვა
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    შემცირებული საოპერაციო ხარჯები
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    შემცირებული დამუშავების დრო
+                  </li>
+                </ul> */}
+              </CardContent>
+            </Card>
+
+            <Card spotlight className="mt-12 ">
+              <CardContent className="flex flex-col justify-center p-8">
+                <img
+                  className="mb-10 rounded rounded-bl-3xl"
+                  src="https://i.postimg.cc/6p2jQnhQ/healthcare.jpg"
+                  alt="insurance"
+                />
+
+                <h2 className="text-left text-2xl font-bold">ჯანდაცვა</h2>
+
+                <p className="text-muted-foreground mt-4 max-w-[55ch] leading-normal">
+                  გაამარტივეთ დოკუმენტების ხელმოწერა და გაგზავნა და გაზარდეთ პაციენტის ნდობა და
+                  კმაყოფილება.
+                </p>
+
+                {/* <ul className="mt-8">
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    დაჩქარებული სესხის და ანგარიშის გახსნა
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    დოკუმენტების უსაფრთხოდ გაცვლა
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    დოკუმენტების უსაფრთხოდ შენახვა
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    შემცირებული საოპერაციო ხარჯები
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    შემცირებული დამუშავების დრო
+                  </li>
+                </ul> */}
+              </CardContent>
+            </Card>
+
+            <Card spotlight className="mt-12 ">
+              <CardContent className="flex flex-col justify-center p-8">
+                <img
+                  className="mb-10 rounded rounded-bl-3xl"
+                  src="https://i.postimg.cc/GmL3w3Pz/science.jpg"
+                  alt="insurance"
+                />
+
+                <h2 className="text-left text-2xl font-bold">მეცნიერება</h2>
+
+                <p className="text-muted-foreground mt-4 max-w-[55ch] leading-normal">
+                  შეთანხმების პროცესების გაციფრულებით, დააჩქარეთ ახალი მედიკამენტებისა და მოწყობილობების წარმოებაში გამოშვება.
+                </p>
+
+                {/* <ul className="mt-8">
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    დაჩქარებული სესხის და ანგარიშის გახსნა
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    დოკუმენტების უსაფრთხოდ გაცვლა
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    დოკუმენტების უსაფრთხოდ შენახვა
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    შემცირებული საოპერაციო ხარჯები
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    შემცირებული დამუშავების დრო
+                  </li>
+                </ul> */}
+              </CardContent>
+            </Card>
+
+            <Card spotlight className="mt-12 ">
+              <CardContent className="flex flex-col justify-center p-8">
+                <img
+                  className="mb-10 rounded rounded-bl-3xl"
+                  src="https://i.postimg.cc/hjb3Bn1b/real-estate.jpg"
+                  alt="insurance"
+                />
+
+                <h2 className="text-left text-2xl font-bold">უძრავი ქონება</h2>
+
+                <p className="text-muted-foreground mt-4 max-w-[55ch] leading-normal">
+                  მიეცით თქვენს კლიენტებს საშუალება გამოსცადონ თანამედროვე და კომფორტული გზა, დოკუმენტებზე ხელმოსაწერად
+                </p>
+
+                {/* <ul className="mt-8">
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    დაჩქარებული სესხის და ანგარიშის გახსნა
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    დოკუმენტების უსაფრთხოდ გაცვლა
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    დოკუმენტების უსაფრთხოდ შენახვა
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    შემცირებული საოპერაციო ხარჯები
+                  </li>
+                  <li className="list-disc text-sm text-slate-600 ">
+                    {' '}
+                    შემცირებული დამუშავების დრო
+                  </li>
+                </ul> */}
+              </CardContent>
+            </Card>
+          </div>
         </CardContent>
       </Card>
     </div>
